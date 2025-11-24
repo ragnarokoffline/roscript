@@ -1,0 +1,51 @@
+# Add this lines to \db\import\skill_db.yml
+
+#Activate critical when doing multiple hit [wrywndp]
+
+# Double Attack
+  - Id: 48
+    Name: TF_DOUBLE
+    Description: Double Attack
+    MaxLevel: 10
+    Type: Weapon
+    DamageFlags:
+      Critical: true
+    Range: -1
+    Hit: Multi_Hit
+    HitCount: 2
+    Element: Weapon
+
+# Triple Attack
+  - Id: 263
+    Name: MO_TRIPLEATTACK
+    Description: Raging Trifecta Blow
+    MaxLevel: 10
+    Type: Weapon
+    DamageFlags:
+      Critical: true
+    Flags:
+      TargetTrap: true
+      TargetEmperium: true
+    Range: -1
+    Hit: Multi_Hit
+    HitCount: -3
+    Element: Weapon
+    CopyFlags:
+      Skill:
+        Plagiarism: true
+        Reproduce: true
+    CastDelayFlags:
+      IgnoreStatus: true
+
+# Chain Action
+  - Id: 511
+    Name: GS_CHAINACTION
+    Description: Chain Action
+    MaxLevel: 10
+    Type: Weapon
+    DamageFlags:
+      Critical: true
+    Range: -9
+    Hit: Multi_Hit
+    HitCount: 2
+    Element: Weapon
